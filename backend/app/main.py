@@ -10,7 +10,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://localhost:4173",
-        "https://repd.vercel.app",  # update with your real domain later
+        "https://repd-sigma.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
