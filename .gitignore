@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+venv/
+.env
+
+# Environment files
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+.vite/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+.Python
+pip-wheel-metadata/
+pip-log.txt
+htmlcov/
+.coverage
+.coverage.*
+.cache/
+.pytest_cache/
+migrations/__pycache__/
+
+# Vite
+*.local
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
