@@ -10,6 +10,7 @@ import Progress  from './pages/Progress'
 import LogSession from './pages/LogSession'
 import AI        from './pages/AI'
 import Settings  from './pages/Settings'
+import ResetPassword from './pages/ResetPassword'
 
 function Protected({ children }) {
   const { user, loading } = useAuthStore()
@@ -46,6 +47,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
+      <Route path="/reset-password" element={<ResetPassword />} />
       <Route path="/" element={
         <Protected>
           <AppLayout />

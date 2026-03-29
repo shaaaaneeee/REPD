@@ -18,7 +18,12 @@ export default function ResetPassword() {
   useEffect(() => {
     // Parse the token from the URL hash that Supabase appends
     const hash = window.location.hash
-    const params = new URLSearchParams(hash.replace('#', ''))
+    const query = window.location.search
+    
+    const params = new URLSearchParams(
+      hash ? hash.replace('#', '') : query
+    )
+    
     const accessToken  = params.get('access_token')
     const refreshToken = params.get('refresh_token')
     const type         = params.get('type')
